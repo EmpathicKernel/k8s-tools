@@ -25,13 +25,13 @@
 # Usage:
 #   
 #       Scale out the number of replicas for entire namespace "default" to 4
-#           python3 ./k8s_scaling.py -n default --scale --namespace-wide --replicas 4
+#           python3 ./main.py -n default --scale --namespace-wide --replicas 4
 #
 #       Scale in the number of replicas for example-deployment within namespace "default" to 0
-#           python3 ./k8s_scaling.py -n default --scale-in --replicas 0 example-deployment
+#           python3 ./main.py -n default --scale-in --replicas 0 example-deployment
 #
 #       Get a printout of current number of replicas within namespace "test-namespace"
-#           python3 ./k8s_scaling.py -n test-namespace
+#           python3 ./main.py -n test-namespace
 # 
 
 import sys
